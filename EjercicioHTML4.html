@@ -20,7 +20,7 @@
     <br>
     <label>Repita su contraseña</label>
     <input type="text" name="contraseñaRep">
-    <br>
+    <br> <br>
     <label>Sucursal:</label>
     <div>
       <input type="radio" name="sucursal" value="centro" checked> Centro<br>
@@ -28,12 +28,24 @@
       <input type="radio" name="sucursal" value="generalPaz"> General Paz<br>
       <input type="radio" name="sucursal" value="cofico"> Cofico<br>
     </div>
+    <br>
+    <label>Disponibilidad:</label>
+    <select name="menu">
+      <option value="parttime">Part time</option>
+      <option value="fulltime">Full time</option>
+      <option value="remoto">Remoto</option>
+      <option value="" selected>Seleccione...</option>
+  </select>
+  <br> <br>
     <label>Turno:</label>
     <div>
       <input type="checkbox" name="turno" value="mañana"> Mañana<br>
       <input type="checkbox" name="turno" value="tarde"> Tarde <br>
       <input type="checkbox" name="turno" value="noche"> Noche <br>
     </div>
+    <br>
+    <label>Biografía: </label><br>
+    <textarea name="biografia" cols="60" rows="4" placeholder="Ingrese comentarios"></textarea>
     <br>
     <input type="submit" name="Enviar" value="Enviar datos">
     </form>
