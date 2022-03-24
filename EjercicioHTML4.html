@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 4</title>
+</head>
+<body>
+  <p>&#128281; <a href="index.html">Volver</a></p>
+  <hr>
+    <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <h1>Registro</h1>
+    <label>Ingrese su nombre de usuario: @</label>
+    <input type="text" name="nombre">
+    <input type="button" name="verificarUsuario" value="Verificar" onclick="alert('Nombre de usuario disponible')">
+    <br>
+    <label>Ingrese su contraseña</label>
+    <input type="text" name="contraseña">
+    <br>
+    <label>Repita su contraseña</label>
+    <input type="text" name="contraseñaRep">
+    <br>
+    <label>Sucursal:</label>
+    <div>
+      <input type="radio" name="sucursal" value="centro" checked> Centro<br>
+      <input type="radio" name="sucursal" value="nuevaCordoba"> Nueva Córdoba<br>
+      <input type="radio" name="sucursal" value="generalPaz"> General Paz<br>
+      <input type="radio" name="sucursal" value="cofico"> Cofico<br>
+    </div>
+    <label>Turno:</label>
+    <div>
+      <input type="checkbox" name="turno" value="mañana"> Mañana<br>
+      <input type="checkbox" name="turno" value="tarde"> Tarde <br>
+      <input type="checkbox" name="turno" value="noche"> Noche <br>
+    </div>
+    <br>
+    <input type="submit" name="Enviar" value="Enviar datos">
+    </form>
+</body>
+</html>
