@@ -11,15 +11,15 @@
   <hr>
     <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi">
     <h1>Registro</h1>
-    <label>Ingrese su nombre de usuario: @</label>
-    <input type="text" name="nombre">
+    <label for="nombre">Ingrese su nombre de usuario: @</label>
+    <input type="text" name="nombre" id="nombre">
     <input type="button" name="verificarUsuario" value="Verificar" onclick="alert('Nombre de usuario disponible')">
     <br>
-    <label>Ingrese su contraseña</label>
-    <input type="text" name="contraseña">
+    <label for="contraseña">Ingrese su contraseña</label>
+    <input type="text" name="contraseña" id="contraseña">
     <br>
-    <label>Repita su contraseña</label>
-    <input type="text" name="contraseñaRep">
+    <label for="contraseñaRep">Repita su contraseña</label>
+    <input type="text" name="contraseñaRep" id="contraseñaRep">
     <br> <br>
     <label>Sucursal:</label>
     <div>
@@ -29,11 +29,12 @@
       <input type="radio" name="sucursal" value="cofico"> Cofico<br>
     </div>
     <br>
-    <label>Disponibilidad:</label>
-    <select name="menu">
+    <label for="menu">Disponibilidad:</label>
+    <select name="menu" id="menu">
       <option value="parttime">Part time</option>
       <option value="fulltime">Full time</option>
       <option value="remoto">Remoto</option>
+      <option value="indistinto">Indistinto</option>
       <option value="" selected>Seleccione...</option>
   </select>
   <br> <br>
@@ -45,7 +46,7 @@
     </div>
     <br>
     <label>Biografía: </label><br>
-    <textarea name="biografia" cols="60" rows="4" placeholder="Ingrese comentarios"></textarea>
+    <textarea name="biografia" cols="50" rows="5" placeholder="Ingrese comentarios"></textarea>
     <br>
     <input type="submit" name="Enviar" value="Enviar datos">
     </form>
