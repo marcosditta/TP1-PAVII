@@ -9,8 +9,10 @@
 <body>
   <p>&#128281; <a href="index.html">Volver</a></p>
   <hr>
+  <h1>Registro</h1>
     <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi">
-    <h1>Registro</h1>
+    <fieldset>
+    <legend>Nuevo empleado</legend>
     <label for="nombre">Ingrese su nombre de usuario: @</label>
     <input type="text" name="nombre" id="nombre">
     <input type="button" name="verificarUsuario" value="Verificar" onclick="alert('Nombre de usuario disponible')">
@@ -29,12 +31,12 @@
       <input type="radio" name="sucursal" id="sucursal" value="cofico"> Cofico<br>
     </div>
     <br>
-    <label for="menu">Disponibilidad:</label>
+    <label for="menu">Modalidad:</label>
     <select name="menu" id="menu">
       <option value="parttime">Part time</option>
       <option value="fulltime">Full time</option>
       <option value="remoto">Remoto</option>
-      <option value="indistinto">Indistinto</option>
+      <option value="indistinto">A demanda</option>
       <option value="" selected>Seleccione...</option>
   </select>
   <br> <br>
@@ -49,6 +51,7 @@
     <textarea name="biografia" id="biografia" cols="50" rows="5" placeholder="Ingrese comentarios"></textarea>
     <br>
     <input type="submit" name="Enviar" value="Enviar datos">
+      </fieldset>
     </form> 
 </body>
 </html>
