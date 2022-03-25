@@ -11,7 +11,7 @@
   <hr>
   <h1>Ejercicio 1: Análisis de un sitio web</h1>
   <ol>
-    <li><p>¿Cuántos Kilobytes se transfieren al navegador para visualizar la página de manera completa? Cuanto tiempo demora en cargar la página. Si se utiliza el caché del navegador, ¿demora lo mismo?<p></li>
+    <li>¿Cuántos Kilobytes se transfieren al navegador para visualizar la página de manera completa? Cuanto tiempo demora en cargar la página. Si se utiliza el caché del navegador, ¿demora lo mismo?</li>
       <table border="1">
         <tr>
           <th></th>
@@ -27,17 +27,21 @@
         <th>Demora en cargar</th>
         <td>5.54 s</td>
         <td>4.27 s</td>
-      </tr>
-      </table>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+      </tr> 
+      </table> <br>
+    <li><b>¿La página posee errores o warnings?</b></li> No posee errores, el estado de todas las solicitudes fueron codigos 2XX
+    <li><b>¿Cuál es el archivo que demora más tiempo en descargarse de la página?</b></li> Estos fueron los 5 archivos que mas demoraron en descargarse, son documentos y texto html
+    <li><b>¿Todos los archivos provienen del mismo servidor? </b></li> No, como se muestra en la imagen, no todos los archivos provienen del mismo servidor de la facultad.
+    <li><b>¿Cuántas imágenes posee?, ¿cuánto tiempo demora en descargarlas? ¿Cual es la imagen de mayor tamaño en kilobytes que se descarga del sitio?</b></li> Posee 73 imagenes (jpeg, png, gif, webp). Con caché inhabilitado se demora 7.62s. La imagen de mayor tamaño que se descarga del sitio tiene 166kB, es el logo de YouTube en formato jpg
+    <li><b>¿Cuántos archivos de hojas de estilo utiliza?</b></li> Utiliza 4 archivos de hojas de estilo, como se puede ver en la imagen.
+    <li><b>¿En qué versión de html indica el documento que está realizada la página?</b></li> Esta hecho en XHTML 1.0 Transitional como se muestra en la imagen
+    <li><b>¿Los archivos javascript y/o css están minificados?</b></li>
+    <ul>
+      <li>Ningun archivo css esta minificado</li>
+      <li>Se pudo identificar un soloa rchivo js minificado gracias a su extension .min</li>
+    </ul>
+    <li><b>¿Qué tiempo demoraría la página en descargar en un equipo con señal de datos de una red Regular 3G?</b></li> En un equipo con 3G y con la caché deshabilitada demoraria 36.52 seg
+    <li><b>La página es compatible con el estándar html indicado en la cabecera. Analice la misma en https://validator.w3.org/</b></li>
   </ol>
   
 </body>
